@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  padding: 20px;
+  background-color: #ccc;
+  margin: 50px auto 20px;
+  border-radius: 10px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.form .text {
+  flex: 2;
+  margin: 0 10px;
+  border: none;
+  height: 3em;
+  padding: 0;
+  border-radius: 14px;
+  padding: 4px 15px;
+  outline: none;
+}
+.form .add {
+  border: none;
+  height: 3em;
+  border-radius: 16px;
+  padding: 4px 15px;
+  color: white;
+  background: #ff7100;
+  font-size: 16px;
+  letter-spacing: 1.7px;
+  cursor: pointer;
+  transition: .3s;
+}
+.form .add:hover {
+  background-color: #e16704;
+}
+.taskes {
+  background-color: #ccc;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+.taskes .new-task {
+  background: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  margin: 10px 0;
+}
+.taskes .new-task .delete {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  height: fit-content;
+  padding: 5px 20px;
+  margin-left: 5px;
+  border-radius: 10px;
+  transition: .3s;
+  border: 1px solid transparent;
+}
+.taskes .new-task .delete:hover {
+  color: red;
+  background-color: white;
+  border-color: red;
+}
+.taskes .new-task p {
+  flex: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0;
+}
